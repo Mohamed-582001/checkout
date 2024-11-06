@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+      <title>ShopCart</title>
+</head>
+<body>
+
+<div class="cart-container">
+  <h2 class="cart-title">shooping cart</h2>
+
+  <div class="cart-item" data-price="100">
+    <p class="cart-item-name">product 1</p>
+    <p class="cart-item-price">100 USD</p>
+    <div class="quantity-control">
+      <button onclick="changeQuantity(this, -1)">-</button>
+      <span class="quantity">1</span>
+      <button onclick="changeQuantity(this, 1)">+</button>
+    </div>
+  </div>
+
+  <div class="cart-item" data-price="50">
+    <p class="cart-item-name">product 2</p>
+    <p class="cart-item-price">50 USD</p>
+    <div class="quantity-control">
+      <button onclick="changeQuantity(this, -1)">-</button>
+      <span class="quantity">1</span>
+      <button onclick="changeQuantity(this, 1)">+</button>
+    </div>
+  </div>
+
+  <div class="checkout-section">
+    <span>The Total: <span id="total-cost">0</span> USD</span>
+    <button class="checkout-button"  onclick="checkout()">checkout</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
